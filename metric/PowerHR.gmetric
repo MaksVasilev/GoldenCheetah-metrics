@@ -1,0 +1,5 @@
+<usermetrics version="1">
+	<usermetric symbol="PowerHR" name="Отношение Power/HR" description="" unitsMetric="Вт/уд/мин" unitsImperial="Вт/уд/мин" aggzero="1" istime="0" precision="3" type="1" conversion="0" conversionSum="0" fingerprint="PowerHR{relevant{Datacontains&quot;P&quot;;}init{powerhr&lt;-0;seconds&lt;-0;}sample{powerhr&lt;-powerhr+(POWER/HEARTRATE*RECINTSECS);seconds&lt;-seconds+RECINTSECS;}value{powerhr/seconds;}count{seconds;}}" >
+{\n    relevant { Data contains &quot;P&quot;; }\n\n    init { powerhr &lt;- 0; seconds &lt;- 0; }\n\n    sample { \n        powerhr &lt;- powerhr + (POWER/HEARTRATE * RECINTSECS);\n        seconds &lt;- seconds + RECINTSECS;\n    }\n\n	value { powerhr / seconds; }\n#    value { (samples(POWER) / samples(HEARTRATE) * recIntSecs / Duration) ; }\n    count { seconds; }\n}
+</usermetric>
+</usermetrics>
